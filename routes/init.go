@@ -1,6 +1,8 @@
 package routes
 
 import (
+	"backend-todo/config"
+	"fmt"
 	"log"
 
 	"github.com/gin-gonic/gin"
@@ -15,5 +17,5 @@ func Initialize() {
 	RegisterTaskRoutes(r)
 
 	// Start the server
-	log.Fatal(r.Run(":8080"))
+	log.Fatal(r.Run(fmt.Sprintf(":%s", config.PORT)))
 }
