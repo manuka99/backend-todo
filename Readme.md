@@ -4,6 +4,12 @@
 
 This project is a RESTful API built in Go for managing tasks. The API supports operations like creating tasks, retrieving tasks, caching frequent requests using Go routines and channels, and interacting with AWS DynamoDB for persistent storage.
 
+The API is deployed on AWS Elastic Beanstalk and is accessible via the following URL:
+
+[http://backend-todo-golang.us-east-1.elasticbeanstalk.com/](http://backend-todo-golang.us-east-1.elasticbeanstalk.com/)
+
+You can use this URL to interact with the API for creating, retrieving tasks, and more.
+
 ## Features
 
 - **Create a Task**  
@@ -58,12 +64,6 @@ This project is a RESTful API built in Go for managing tasks. The API supports o
 
 This project is integrated with **AWS Elastic Beanstalk** (EB) for continuous deployment, using GitHub Actions for automation.
 
-The API is deployed on AWS Elastic Beanstalk and is accessible via the following URL:
-
-[http://backend-todo-golang.us-east-1.elasticbeanstalk.com/](http://backend-todo-golang.us-east-1.elasticbeanstalk.com/)
-
-You can use this URL to interact with the API for creating, retrieving tasks, and more.
-
 ---
 
 ### Deployment Automation
@@ -89,7 +89,7 @@ Ensure the following secrets are configured in the GitHub repository:
 Variables
 - `APP_VERSION` - The version of the application to deploy.
 
-These secrets $ variables are used in the deployment process to authenticate and deploy the application to AWS.
+These secrets & variables are used in the deployment process to authenticate and deploy the application to AWS.
 
 ## License
 
