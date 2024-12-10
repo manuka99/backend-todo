@@ -24,5 +24,5 @@ jobs:
           application_name: ${{ secrets.EB_APPLICATION_NAME }}
           environment_name: ${{ secrets.EB_ENVIRONMENT_NAME }}
           region: ${{ secrets.AWS_REGION }}
-          version_label: ${{ secrets.APP_VERSION }}
+          version_label: ${{ vars.APP_VERSION }}
           deployment_package: deploy.zip
