@@ -9,7 +9,7 @@ import (
 
 var (
 	// Port is the server port
-	PORT = "8080"
+	PORT string
 )
 
 func Initialize() {
@@ -20,4 +20,7 @@ func Initialize() {
 
 	// Set environment variables
 	PORT = os.Getenv("PORT")
+	if PORT == "" {
+		PORT = "8080"
+	}
 }
